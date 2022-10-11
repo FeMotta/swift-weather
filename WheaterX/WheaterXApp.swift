@@ -15,3 +15,5 @@ struct WheaterXApp: App {
         }
     }
 }
+
+/* https://api.openweather.org/data/2.5/onecall/8ac63e660d9883993bd1489c1d306934 - APIKey */
