@@ -8,13 +8,24 @@
 import SwiftUI
 
 struct CityNameView: View {
+    var city: String
+    var date: String
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack {
+            VStack(alignment: .center, spacing: 10) {
+                Text(city.replacingOccurrences(of: "%20", with: " ").capitalized)
+                    .font(.title)
+                    .bold()
+                    .padding(.top, 15)
+                Text(date)
+            }.foregroundColor(.white)
+        }
     }
 }
 
 struct CityNameView_Previews: PreviewProvider {
     static var previews: some View {
-        CityNameView()
+        ContentView()
     }
 }
